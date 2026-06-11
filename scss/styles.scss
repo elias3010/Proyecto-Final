@@ -1,0 +1,17 @@
+@use 'variables' as *;
+
+
+body .hero {
+    background-color: $color-primario;
+    min-height: 90vh;
+    h1 {
+        color: #333;
+    }
+    p {
+        color: $color-fondo;
+    }
+    btn {
+        background-color: $color-acento;
+        color: white
+    }
+}
