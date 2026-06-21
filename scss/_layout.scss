@@ -1,15 +1,18 @@
 @use 'variables' as *;
 @use 'mixins' as *;
+@use 'animaciones' as *;
 
 .hero {
     background-color: $color-primario;
     min-height: 90vh;
     @include centrar-flex(column);
     h1 {
-        color: #08f6ca;       
+        color: #08f6ca;
+        animation: hero 1s ease-out forwards;       
     }
     p {
         color: $color-fondo;
+        animation: hero 1.2s ease-out forwards; 
     }
     .btn {                             
         background-color: $color-acento !important;
@@ -18,14 +21,16 @@
         &:hover {
             background-color: darken($color-acento, 10%) !important;
         }
-    }
-    
+        animation: pulso 2s ease-in-out infinite;
+    } 
 }
+
 body {
     background-color: $color-fondo;
     color: $color-texto;
     font-family: 'roboto', sans-serif;
 }
+
 .navbar {
     background-color: $color-primario;
     
@@ -37,11 +42,20 @@ body {
         }
     }
 }
+
 footer {
     background-color: $color-primario;
     color: white;
     @include centrar-flex(column);
 }
+
 .productos-destacados {
     @include seccion-padding;
+    .card {
+        transition: transform 0.3s ease;
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+    }
 }
