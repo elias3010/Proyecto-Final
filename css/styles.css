@@ -34,6 +34,15 @@
     scale: 1;
   }
 }
+footer {
+  background-color: #1a2e44;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .hero {
   background-color: #1a2e44;
   min-height: 90vh;
@@ -76,15 +85,6 @@ body {
 }
 .navbar .nav-link:hover {
   color: #e8820c;
-}
-
-footer {
-  background-color: #1a2e44;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .productos-destacados {

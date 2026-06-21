@@ -1,0 +1,8 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+footer {
+    background-color: $color-primario;
+    color: white;
+    @include centrar-flex(column);
+}

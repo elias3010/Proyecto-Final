@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'mixins' as *;
 @use 'animaciones' as *;
+@use 'partials' as *;
 
 .hero {
     background-color: $color-primario;
@@ -41,12 +42,6 @@ body {
             color: $color-acento;
         }
     }
-}
-
-footer {
-    background-color: $color-primario;
-    color: white;
-    @include centrar-flex(column);
 }
 
 .productos-destacados {
