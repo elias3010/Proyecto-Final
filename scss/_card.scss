@@ -1,0 +1,21 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.card {
+    background-color: $color-fondo;
+    border-radius: 1rem;
+    
+    transition: color 0.3s ease;
+        &:hover {
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+            transform: translateY(-5px);
+        }   
+    .card-img-top {
+        width: 100%;
+        height: 370px;       
+        object-fit: cover; 
+    }
+    .btn {
+        @include boton;
+    }
+}

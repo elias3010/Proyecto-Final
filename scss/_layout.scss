@@ -1,0 +1,47 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.hero {
+    background-color: $color-primario;
+    min-height: 90vh;
+    @include centrar-flex(column);
+    h1 {
+        color: #08f6ca;       
+    }
+    p {
+        color: $color-fondo;
+    }
+    .btn {                             
+        background-color: $color-acento !important;
+        color: white !important;
+
+        &:hover {
+            background-color: darken($color-acento, 10%) !important;
+        }
+    }
+    
+}
+body {
+    background-color: $color-fondo;
+    color: $color-texto;
+    font-family: 'roboto', sans-serif;
+}
+.navbar {
+    background-color: $color-primario;
+    
+    .nav-link { 
+        color: $color-texto;    
+        transition: color 0.3s ease;
+        &:hover {
+            color: $color-acento;
+        }
+    }
+}
+footer {
+    background-color: $color-primario;
+    color: white;
+    @include centrar-flex(column);
+}
+.productos-destacados {
+    @include seccion-padding;
+}

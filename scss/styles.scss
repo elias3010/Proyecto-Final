@@ -1,17 +1,6 @@
 @use 'variables' as *;
-
-
-body .hero {
-    background-color: $color-primario;
-    min-height: 90vh;
-    h1 {
-        color: #08f6ca;
-    }
-    p {
-        color: $color-fondo;
-    }
-    btn {
-        background-color: $color-acento;
-        color: white
-    }
-}
+@use 'layout' as *;
+@use 'card' as *;
+@use 'extends' as *;
+@use 'mixins' as *;
+@use 'responsive' as *;

@@ -1,0 +1,20 @@
+@use 'variables' as *;
+
+@mixin centrar-flex($direction: row) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+@mixin boton($bg: $color-acento, $color: white) {
+    background-color: $bg;
+    color: $color;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+@mixin seccion-padding {
+    padding: 60px 0;
+}
