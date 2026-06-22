@@ -43,6 +43,33 @@ footer {
   flex-direction: column;
 }
 
+.hero-pages {
+  background-color: #1a2e44;
+  min-height: 35vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero-pages h1 {
+  color: #08f6ca;
+  animation: hero 1s ease-out forwards;
+}
+.hero-pages p {
+  color: #f7f5f2;
+  animation: hero 1.2s ease-out forwards;
+}
+.hero-pages .btn {
+  background-color: #e8820c !important;
+  color: white !important;
+}
+.hero-pages .btn:hover {
+  background-color: rgb(183.5081967213, 102.8278688525, 9.4918032787) !important;
+}
+.hero-pages .btn {
+  animation: pulso 2s ease-in-out infinite;
+}
+
 .hero {
   background-color: #1a2e44;
   min-height: 90vh;

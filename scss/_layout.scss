@@ -7,23 +7,27 @@
     background-color: $color-primario;
     min-height: 90vh;
     @include centrar-flex(column);
+
     h1 {
         color: #08f6ca;
-        animation: hero 1s ease-out forwards;       
+        animation: hero 1s ease-out forwards;
     }
+
     p {
         color: $color-fondo;
-        animation: hero 1.2s ease-out forwards; 
+        animation: hero 1.2s ease-out forwards;
     }
-    .btn {                             
+
+    .btn {
         background-color: $color-acento !important;
         color: white !important;
 
         &:hover {
             background-color: darken($color-acento, 10%) !important;
         }
+
         animation: pulso 2s ease-in-out infinite;
-    } 
+    }
 }
 
 body {
@@ -34,10 +38,11 @@ body {
 
 .navbar {
     background-color: $color-primario;
-    
-    .nav-link { 
-        color: $color-texto;    
+
+    .nav-link {
+        color: $color-texto;
         transition: color 0.3s ease;
+
         &:hover {
             color: $color-acento;
         }
@@ -46,8 +51,10 @@ body {
 
 .productos-destacados {
     @include seccion-padding;
+
     .card {
         transition: transform 0.3s ease;
+
         &:hover {
             transform: scale(1.03);
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);

@@ -6,3 +6,25 @@ footer {
     color: white;
     @include centrar-flex(column);
 }
+.hero-pages {
+    background-color: $color-primario;
+    min-height: 35vh;
+    @include centrar-flex(column);
+    h1 {
+        color: #08f6ca;
+        animation: hero 1s ease-out forwards;       
+    }
+    p {
+        color: $color-fondo;
+        animation: hero 1.2s ease-out forwards; 
+    }
+    .btn {                             
+        background-color: $color-acento !important;
+        color: white !important;
+
+        &:hover {
+            background-color: darken($color-acento, 10%) !important;
+        }
+        animation: pulso 2s ease-in-out infinite;
+    } 
+}
