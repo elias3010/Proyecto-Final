@@ -34,6 +34,14 @@
     scale: 1;
   }
 }
+.hero, .hero-pages {
+  background-color: #1a2e44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 footer {
   background-color: #1a2e44;
   color: white;
@@ -44,7 +52,6 @@ footer {
 }
 
 .hero-pages {
-  background-color: #1a2e44;
   min-height: 35vh;
   display: flex;
   justify-content: center;
@@ -71,7 +78,6 @@ footer {
 }
 
 .hero {
-  background-color: #1a2e44;
   min-height: 90vh;
   display: flex;
   justify-content: center;
@@ -89,12 +95,10 @@ footer {
 .hero .btn {
   background-color: #e8820c !important;
   color: white !important;
+  animation: pulso 2s ease-in-out infinite;
 }
 .hero .btn:hover {
-  background-color: rgb(183.5081967213, 102.8278688525, 9.4918032787) !important;
-}
-.hero .btn {
-  animation: pulso 2s ease-in-out infinite;
+  background-color: #c96e0a !important;
 }
 
 body {
@@ -178,6 +182,20 @@ body {
   }
   footer {
     padding: 20px 10px;
+  }
+  .Aridos,
+  .Bolsas,
+  .Ladrillos {
+    padding: 20px;
+  }
+  .nosotros {
+    padding: 20px;
+  }
+  .hero-pages {
+    padding: 30px;
+  }
+  .hero-pages h1 {
+    font-size: 1.5rem;
   }
 }
 

@@ -2,9 +2,10 @@
 @use 'mixins' as *;
 @use 'animaciones' as *;
 @use 'partials' as *;
+@use 'extends' as *;
 
 .hero {
-    background-color: $color-primario;
+    @extend %hero-base;
     min-height: 90vh;
     @include centrar-flex(column);
 
@@ -21,12 +22,11 @@
     .btn {
         background-color: $color-acento !important;
         color: white !important;
+        animation: pulso 2s ease-in-out infinite;
 
         &:hover {
-            background-color: darken($color-acento, 10%) !important;
-        }
-
-        animation: pulso 2s ease-in-out infinite;
+            background-color: $color-acento-oscuro !important;
+        } 
     }
 }
 
