@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Corralón González - Materiales de construcción en José C. Paz. Arena, cemento, ladrillos y más.">
     <meta name="keywords" content="corralon, materiales construccion, jose c paz, arena, cemento, ladrillos">
     <meta name="author" content="Corralón González">
 
@@ -22,11 +20,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegacion Principal">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Corralon González</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Desplegar menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -34,7 +32,7 @@
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="./Productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./Servicios.html">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Servicios.html" aria-current="page">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
                 </ul>
             </div>
@@ -48,29 +46,29 @@
         </div>
     </section>
 
-    <main>
+    <main aria-label="Servicios del corralon">
         <section class="servicios">
             <div class="container mt-5 pb-5">
             <div class="row g-4">
 
             <div class="col-md-6">
             <div class="card h-100">
-                <i class="bi bi-truck"></i>
+                <i class="bi bi-truck" aria-hidden="true"></i>
                 <div class="card-body">
                     <h5 class="card-title">Entregas a domicilio</h5>
                     <p class="card-text">Realizamos entregas a domicilio superando los $100,000 de compra y llegamos a 20km de radio en la zona.</p>
-                    <a href="https://wa.me/541164907731?text=Hola!%20Quería%20consultar%20por%20las%20entregas%20a%20domicilio" target="_blank" class="btn btn-primary">Consultar por WhatsApp</a>
+                    <a href="https://wa.me/541164907731?text=Hola!%20Quería%20consultar%20por%20las%20entregas%20a%20domicilio" target="_blank" aria-label="Consultar por WhatsApp sobre entregas a domicilio, se abre en nueva pestaña" class="btn btn-primary">Consultar por WhatsApp</a>
                 </div>
             </div>
             </div>
             
             <div class="col-md-6">
             <div class="card h-100">
-                <i class="bi-file-text"></i>
+                <i class="bi-file-text" aria-hidden="true"></i>
                 <div class="card-body">
                     <h5 class="card-title">Presupuesto</h5>
                     <p class="card-text"> Consulte presupuestos gratis y las 24hs</p>
-                    <a href="https://wa.me/541164907731?text=Hola!%20Quería%20consultar%20por%20las%20entregas%20a%20domicilio" target="_blank" class="btn btn-primary">Consultar por WhatsApp</a>
+                    <a href="https://wa.me/541164907731?text=Hola!%20Quería%20consultar%20por%20las%20entregas%20a%20domicilio" target="_blank" aria-label="Consultar por WhatsApp sobre presupuestos, se abre en nueva pestaña" class="btn btn-primary">Consultar por WhatsApp</a>
                 </div>
             </div>
             </div>
@@ -80,10 +78,16 @@
         </section>
     </main>
 
-    <footer class="footer py-4">
+    <footer class="footer py-4" role="contentinfo">
         <div class="container text-center">
-            <p>📍 Av. Remigio Lopez 4452, Jose. C. Paz, Buenos Aires</p>
-            <p>📞 011-6490-7731</p>
+            <p>
+                <span class="visually-hidden">Dirección: Av. Remigio Lopez 4452, Jose C. Paz, Buenos Aires</span>
+                <span aria-hidden="true">📍 Av. Remigio Lopez 4452, Jose. C. Paz, Buenos Aires</span>
+            </p>
+            <p>
+                <span class="visually-hidden">Teléfono de contacto: 011-6490-7731</span> 
+                <span aria-hidden="true">📞 011-6490-7731</span> 
+            </p>
             <p>© 2024 Corralón González. Todos los derechos reservados.</p>
         </div>
     </footer>

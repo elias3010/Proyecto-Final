@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Corralón González - Materiales de construcción en José C. Paz. Arena, cemento, ladrillos y más.">
     <meta name="keywords" content="corralon, materiales construccion, jose c paz, arena, cemento, ladrillos">
     <meta name="author" content="Corralón González">
 
@@ -21,17 +19,17 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegacion Principal">
         <div class="container">
             <a class="navbar-brand" href="../index.html">Corralon González</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Desplegar menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="./Productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./Productos.html" aria-current="page">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contacto.html">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="./Servicios.html">Servicios</a></li>
                     <li class="nav-item"><a class="nav-link" href="./nosotros.html">Nosotros</a></li>
@@ -46,15 +44,15 @@
         </div>
     </section>
 
-    <main>
-        <section class="Aridos">
+    <main aria-label="Listado de productos">
+        <section class="Aridos" aria-labelledby="titulo-aridos">
             <div class="container">
-                <h2 class="pt-4 mb-4">Aridos</h2>
+                <h2 id="titulo-aridos" class="pt-4 mb-4">Aridos</h2>
                 <div class="row g-4">
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/arena.webp" class="card-img-top" alt="imagen arena">
+                            <img src="../assets/imagenes/arena.webp" class="card-img-top" alt="Arena fina a granel">
                             <div class="card-body">
                                 <h5 class="card-title">Arena</h5>
                                 <p class="card-text">Arena de la mejor calidad</p>
@@ -69,7 +67,7 @@
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/piedras.webp" class="card-img-top" alt="imagen piedra">
+                            <img src="../assets/imagenes/piedras.webp" class="card-img-top" alt="Piedra azulada mediana">
                             <div class="card-body">
                                 <h5 class="card-title">piedra</h5>
                                 <p class="card-text">Piedra de la mejor calidad</p>
@@ -84,7 +82,7 @@
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/cascote.webp" class="card-img-top" alt="imagen cascote">
+                            <img src="../assets/imagenes/cascote.webp" class="card-img-top" alt="Cascote picado sin residuos">
                             <div class="card-body">
                                 <h5 class="card-title">Cascote</h5>
                                 <p class="card-text">Cascote de la mejor calidad</p>
@@ -101,14 +99,14 @@
             </div>
         </section>
 
-        <section class="Bolsas bg-dark bg-opacity-10">
+        <section class="Bolsas bg-dark bg-opacity-10" aria-labelledby="titulo-bolsas">
             <div class="container">
-                <h2 class="pt-4 mb-4">Bolsas</h2>
+                <h2 id="titulo-bolsas" class="pt-4 mb-4">Bolsas</h2>
                 <div class="row g-4">
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/cememtoLoma.webp" class="card-img-top" alt="imagen cemento">
+                            <img src="../assets/imagenes/cememtoLoma.webp" class="card-img-top" alt="Bolsa de Cemento loma negra de 25kg">
                             <div class="card-body">
                                 <h5 class="card-title">Cemento 25kg</h5>
                                 <p class="card-text">Uno de los cementos de mejor calidad en el mercado</p>
@@ -119,7 +117,7 @@
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/calCacique.webp" class="card-img-top" alt="imagen cal">
+                            <img src="../assets/imagenes/calCacique.webp" class="card-img-top" alt="Bolsa de Cal hidrat de 25kg">
                             <div class="card-body">
                                 <h5 class="card-title">Cal 25kg</h5>
                                 <p class="card-text">Cal de la mejor calidad</p>
@@ -130,7 +128,7 @@
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/plasticor.webp" class="card-img-top" alt="imagen plasticor">
+                            <img src="../assets/imagenes/plasticor.webp" class="card-img-top" alt="Bolsa de Plasticor de 25kg">
                             <div class="card-body">
                                 <h5 class="card-title">Pasticor 25kg</h5>
                                 <p class="card-text">La mejor adhesion</p>
@@ -143,14 +141,14 @@
             </div>
         </section>
 
-        <section class="Ladrillos">
+        <section class="Ladrillos" aria-labelledby="titulo-ladrillos">
             <div class="container">
-                <h2 class="pt-4 mb-4">Ladrillos</h2>
+                <h2 id="titulo-ladrillos" class="pt-4 mb-4">Ladrillos</h2>
                 <div class="row g-4">
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/hueco8.webp" class="card-img-top" alt="imagen ladrillos 8">
+                            <img src="../assets/imagenes/hueco8.webp" class="card-img-top" alt="Ladrillo de 8x18x32">
                             <div class="card-body">
                                 <h5 class="card-title">Ladrillo 8x18x32</h5>
                                 <p class="card-text">Ladrillos de calidad premiun</p>
@@ -165,7 +163,7 @@
 
                     <div class="col-md-4">
                         <div class="card">
-                            <img src="../assets/imagenes/hueco12-9.webp" class="card-img-top" alt="imagen ladrillos 12">
+                            <img src="../assets/imagenes/hueco12-9.webp" class="card-img-top" alt="Ladrillo de 12x18x32 de 9 agujeros">
                             <div class="card-body">
                                 <h5 class="card-title">Ladrillos 12x18x32 9 tubos</h5>
                                 <p class="card-text">Ladrillos mas resistentes</p>
@@ -181,7 +179,7 @@
                     <div class="col-md-4">
                         <div class="card">
                             <img src="../assets/imagenes/ladrilloComun.webp" class="card-img-top"
-                                alt="imagen ladrillos comunes">
+                                alt="Ladrillo comun de 10x5x20">
                             <div class="card-body">
                                 <h5 class="card-title">Ladrillo comun</h5>
                                 <p class="card-text">Perfecto para todo tipo de obra</p>
@@ -200,10 +198,16 @@
 
     </main>
 
-    <footer class="footer py-4">
+    <footer class="footer py-4" role="contentinfo">
         <div class="container text-center">
-            <p>📍 Av. Remigio Lopez 4452, Jose. C. Paz, Buenos Aires</p>
-            <p>📞 011-6490-7731</p>
+            <p>
+                <span class="visually-hidden">Dirección: Av. Remigio Lopez 4452, Jose C. Paz, Buenos Aires</span>
+                <span aria-hidden="true">📍 Av. Remigio Lopez 4452, Jose. C. Paz, Buenos Aires</span>
+            </p>
+            <p>
+                <span class="visually-hidden">Teléfono de contacto: 011-6490-7731</span> 
+                <span aria-hidden="true">📞 011-6490-7731</span> 
+            </p>
             <p>© 2024 Corralón González. Todos los derechos reservados.</p>
         </div>
     </footer>

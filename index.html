@@ -19,16 +19,16 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" aria-label="Navegacion Principal">
         <div class="container">
             <a class="navbar-brand fw-bold" href="index.html">Corralon González</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Desplegar menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="./index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./index.html" aria-current="page">Inicio</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/Productos.html">Productos</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/contacto.html">Contacto</a></li>
                     <li class="nav-item"><a class="nav-link" href="./pages/Servicios.html">Servicios</a></li>
@@ -45,40 +45,40 @@
         </div>
     </section>
 
-    <section class="productos-destacados">
+    <section class="productos-destacados" aria-labelledby="titulo-destacados">
         <div class="container">
-            <h2 class="text-center mb-4">Productos Destacados</h2>
+            <h2 id="titulo-destacados" class="text-center mb-4">Productos Destacados</h2>
             <div class="row g-4">
 
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="./assets/imagenes/arena.webp" class="card-img-top" alt="Arena">
+                        <img src="./assets/imagenes/arena.webp" class="card-img-top" alt="Arena fina a granel">
                         <div class="card-body">
                             <h5 class="card-title">Arena</h5>
                             <p class="card-text">Arena de primera calidad para todo tipo de obras.</p>
-                            <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                            <a href="./pages/productos.html" class="btn btn-primary" aria-label="Ver más informacion sobre Arena">Ver más</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="./assets/imagenes/cememtoLoma.webp" class="card-img-top" alt="Cemento">
+                        <img src="./assets/imagenes/cememtoLoma.webp" class="card-img-top" alt=" Bolsa de Cemento Loma Negra de 25kg">
                         <div class="card-body">
                             <h5 class="card-title">Cemento</h5>
                             <p class="card-text">Cemento de alta calidad para construcción.</p>
-                            <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                            <a href="./pages/productos.html" class="btn btn-primary" aria-label="Ver más informacion sobre Cemento">Ver más</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="col-md-4">
                     <div class="card h-100">
-                        <img src="./assets/imagenes/hueco12-9.webp" class="card-img-top" alt="Ladrillos">
+                        <img src="./assets/imagenes/hueco12-9.webp" class="card-img-top" alt="Ladrillos para todo tipo para obras">
                         <div class="card-body">
                             <h5 class="card-title">Ladrillos</h5>
                             <p class="card-text">Ladrillos para todo tipo de construcción.</p>
-                            <a href="./pages/productos.html" class="btn btn-primary">Ver más</a>
+                            <a href="./pages/productos.html" class="btn btn-primary" aria-label="Ver más informacion sobre Ladrillos">Ver más</a>
                         </div>
                     </div>
                 </div>
@@ -87,10 +87,16 @@
         </div>
     </section>
 
-    <footer class="footer py-4">
+    <footer class="footer py-4" role="contentinfo">
         <div class="container text-center">
-            <p>📍 Av. Remigio Lopez 4452, Jose. C. Paz, Buenos Aires</p>
-            <p>📞 011-6490-7731</p>
+            <p>
+                <span class="visually-hidden">Direccion: Av. Remigio Lopez 4452, Jose C. Paz, Buenos Aires</span>
+                <span aria-hidden="true">📍 Av. Remigio Lopez 4452, Jose. C. Paz, Buenos Aires</span>
+            </p>
+            <p>
+                <span class="visually-hidden">Teléfono de contacto: 011-6490-7731</span> 
+                <span aria-hidden="true">📞 011-6490-7731</span> 
+            </p>
             <p>© 2024 Corralón González. Todos los derechos reservados.</p>
         </div>
     </footer>
