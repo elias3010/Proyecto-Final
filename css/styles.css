@@ -153,7 +153,12 @@ body {
   transition: background-color 0.3s ease;
 }
 
-@media (max-width: 768px) {
+.hero {
+  min-height: 50vh;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
   .hero {
     min-height: 60vh;
   }
@@ -162,20 +167,6 @@ body {
   }
   .hero p {
     font-size: 1rem;
-  }
-  .navbar-brand {
-    font-size: 1.2rem;
-  }
-  footer {
-    font-size: 0.9rem;
-  }
-}
-@media (max-width: 576px) {
-  .hero {
-    min-height: 50vh;
-  }
-  .hero h1 {
-    font-size: 1.5rem;
   }
   .card {
     margin-bottom: 1rem;
@@ -186,16 +177,36 @@ body {
   .Aridos,
   .Bolsas,
   .Ladrillos {
-    padding: 20px;
+    padding: 40px;
   }
   .nosotros {
-    padding: 20px;
+    padding: 40px;
   }
   .hero-pages {
     padding: 30px;
   }
   .hero-pages h1 {
     font-size: 1.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    min-height: 90vh;
+  }
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  .hero p {
+    font-size: 1rem;
+  }
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  footer {
+    font-size: 0.9rem;
+  }
+  .productos-destacados .row {
+    flex-direction: row;
   }
 }
 

@@ -1,10 +1,46 @@
 @use 'variables' as *;
 
-@media (max-width: 768px) {
+.hero {
+    min-height: 50vh;
+    max-width: 100%;
+}
+
+@media (min-width: 576px) {
     .hero {
-        min-height: 60vh;        
+        min-height: 60vh;
+
+        h1 {font-size: 2rem;}
+
+        p { font-size: 1rem; }
+    }
+
+    .card {
+        margin-bottom: 1rem;}
+
+    footer {
+        padding: 20px 10px;}
+
+    .Aridos,
+    .Bolsas,
+    .Ladrillos {
+        padding: 40px;
+    }
+    .nosotros {
+        padding: 40px;
+    }
+    .hero-pages {
+        padding: 30px;
         h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        min-height: 90vh;        
+        h1 {
+            font-size: 2.5rem;
         }
         p {
             font-size: 1rem;
@@ -18,37 +54,8 @@
     footer {
         font-size: 0.9rem;
     }
-}
-
-@media (max-width: 576px) {
-    .hero {
-        min-height: 50vh;
-
-        h1 {
-            font-size: 1.5rem;
-        }
-    }
-
-    .card {
-        margin-bottom: 1rem;
-    }
-
-    footer {
-        padding: 20px 10px;
-    }
-
-    .Aridos,
-    .Bolsas,
-    .Ladrillos {
-        padding: 20px;
-    }
-    .nosotros {
-        padding: 20px;
-    }
-    .hero-pages {
-        padding: 30px;
-        h1 {
-            font-size: 1.5rem;
-        }
+    .productos-destacados .row {
+        flex-direction: row; 
     }
 }
+
