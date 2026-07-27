@@ -26,7 +26,7 @@
 
         &:hover {
             background-color: $color-acento-oscuro !important;
-        } 
+        }
     }
 }
 
@@ -37,7 +37,9 @@ body {
 }
 
 .navbar {
+
     background-color: $color-primario;
+    background-image: url('../assets/texturas/diagmonds-light.png');
 
     .nav-link {
         color: $color-texto;
@@ -60,4 +62,10 @@ body {
             box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
         }
     }
+}
+
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    letter-spacing: 1px;
 }

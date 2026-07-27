@@ -109,6 +109,7 @@ body {
 
 .navbar {
   background-color: #1a2e44;
+  background-image: url("../assets/texturas/diagmonds-light.png");
 }
 .navbar .nav-link {
   color: #2c2c2c;
@@ -127,6 +128,12 @@ body {
 .productos-destacados .card:hover {
   transform: scale(1.03);
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  letter-spacing: 1px;
 }
 
 .card {
